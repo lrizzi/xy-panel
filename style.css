@@ -1,0 +1,139 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	color: #333;
+	background-color: #eee;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: 200;
+}
+
+h1{
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #2fcc71;
+	max-width: 40%;
+	margin: 20px auto;
+}
+
+/* CONTAINERS */
+
+.container {max-width: 950px; width: 100%; margin: 0 auto;}
+.four { width: 32.26%; max-width: 32.26%;}
+
+
+/* COLUMNS */
+
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+}
+
+.col:first-of-type { margin-left: 0; }
+
+/* CLEARFIX */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/* FORM */
+
+.form .destination input, .form .source input, .form .action input{
+	display: none;
+}
+
+.form .destination label, .form .source label{
+	position: relative;
+	color: #fff;
+	background-color: #aaa;
+	font-size: 15px;
+	text-align: center;
+	height: 100px;
+  width: 100px;
+	line-height: 100px;
+	display: block;
+	cursor: pointer;
+  text-decoration: none;
+  border: 3px solid transparent;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.form .action label.take{
+	position: relative;
+	color: #fff;
+	background-color: red;
+	font-size: 15px;
+	text-align: center;
+	height: 100px;
+  width: 100px;
+	line-height: 100px;
+	display: block;
+	cursor: pointer;
+  text-decoration: none;
+  border: 3px solid transparent;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.form .action label.clear{
+	position: relative;
+	color: #fff;
+	background-color: green;
+	font-size: 15px;
+	text-align: center;
+	height: 100px;
+  width: 100px;
+	line-height: 100px;
+	display: block;
+	cursor: pointer;
+  text-decoration: none;
+  border: 3px solid transparent;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.form .action label.status{
+	position: relative;
+	color: #fff;
+	background-color: cyan;
+	font-size: 15px;
+	text-align: center;
+	height: 100px;
+  width: 100px;
+	line-height: 100px;
+	display: block;
+	cursor: pointer;
+  text-decoration: none;
+  border: 3px solid transparent;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.form .source input:checked + label{
+	border: 3px solid #333;
+	background-color: #2fcc71;
+}
+
+.form .destination input:checked + label{
+	border: 3px solid #333;
+	background-color: #FF7F50;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Leo's Router Controller</title>
+      <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+<h1>Leo's Router Controller</h1>
+<form name="MTXSelect" method="GET" action="/mtxController" class="form cf" id="take" target="box">
+      <br/>
+      <section class="destination cf">
+      <input form="take" id="out1" type="radio" name="destination" value="1"><label for="out1" class="out1-label four col">OUTPUT 1</label>
+      <input form="take" id="out2" type="radio" name="destination" value="2"><label for="out2" class="out2-label four col">OUTPUT 2</label>
+      <input form="take" id="out3" type="radio" name="destination" value="3"><label for="out3" class="out3-label four col">OUTPUT 3</label>
+      <input form="take" id="out4" type="radio" name="destination" value="4"><label for="out4" class="out4-label four col">OUTPUT 4</label>
+      <input form="take" id="out5" type="radio" name="destination" value="5"><label for="out5" class="out5-label four col">OUTPUT 5</label>
+      <input form="take" id="out6" type="radio" name="destination" value="6"><label for="out6" class="out6-label four col">OUTPUT 6</label>
+      <input form="take" id="out7" type="radio" name="destination" value="7"><label for="out7" class="out7-label four col">OUTPUT 7</label>
+      <input form="take" id="out8" type="radio" name="destination" value="8"><label for="out8" class="out8-label four col">OUTPUT 8</label>
+      </section>
+      <section class="source cf">
+      <input form="take" id="in1" type="radio" name="source" value="1"><label for="in1" class="in1-label four col">INPUT 1</label>
+      <input form="take" id="in2" type="radio" name="source" value="2"><label for="in2" class="in2-label four col">INPUT 2</label>
+      <input form="take" id="in3" type="radio" name="source" value="3"><label for="in3" class="in3-label four col">INPUT 3</label>
+      <input form="take" id="in4" type="radio" name="source" value="4"><label for="in4" class="in4-label four col">INPUT 4</label>
+      <input form="take" id="in5" type="radio" name="source" value="5"><label for="in5" class="in5-label four col">INPUT 5</label>
+      <input form="take" id="in6" type="radio" name="source" value="6"><label for="in6" class="in6-label four col">INPUT 6</label>
+      <input form="take" id="in7" type="radio" name="source" value="7"><label for="in7" class="in7-label four col">INPUT 7</label>
+      <input form="take" id="in8" type="radio" name="source" value="8"><label for="in8" class="in8-label four col">INPUT 8</label>
+      </section>
+      <section class="action cf">
+      <input form="take" id=clear type="button" value="CLEAR" onClick="this.form.reset()"/><label for="clear" class="clear-label clear four col">CLEAR</label>
+      <input form="take" id=takebutton type="button" value="TAKE" onClick="this.form.submit()"/><label for="takebutton" class="take-label take four col">TAKE</label>
+      <input form="take" id=status type="button" value="STATUS" onClick="window.open('/mtxStatus', 'box')";/><label for="status" class="status-label status four col">STATUS</label>
+      <!--<button class="btntake col" type="submit" form="take">TAKE</button>-->
+      <selection>
+</form>
+</div>
+<br/>
+<div class="container">
+ <iframe src="/mtxStatus" width="900" height="100" name="box"></iframe>
+</div>
+</body>
+</html>
